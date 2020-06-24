@@ -1,0 +1,321 @@
+/*Base element styles*/
+
+. {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Varela round';
+    margin: auto 0;
+    padding:  0;;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align:center;
+}
+
+p {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+nav {
+    text-align: center;
+    margin: 2px auto;
+    max-width: 90%;
+   }
+ul {
+    padding: 0;
+    margin-bottom: 3em;
+}
+
+li {
+    color: black;
+    font-size: .75em;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    line-height: 2em;
+    
+}
+/* Base Layout styles */
+.name {
+    color: rgb(148, 5, 177);
+    margin: 1em;
+}
+
+.col {
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.main-header {
+    text-align: center;
+
+}
+
+.portfolio {
+    padding-top: 1em;
+    margin-bottom: 3em;
+    background-color: silver;
+}
+
+.contact {
+    margin-bottom: 5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.avatar {
+    max-width: 65%;
+    margin-bottom: 2em;
+}
+
+.image {
+    text-align: center;
+    max-width: 90%;
+}
+
+.section-title {
+    margin-bottom: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(148, 5, 177);
+}
+
+.main-footer {
+    margin: auto;
+    border-top: solid lightgray .5px;
+    max-width: 90%;
+    padding: 2em 0 2.5em;
+    position: relative;
+}
+
+.footer-info {
+    float: left;
+    text-align: left;
+}
+/* Navigation */
+
+.footer-nav-tablet {
+    display: none;
+    color: rgb(148, 5, 177);
+}
+
+.main-nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    color: rgb(148, 5, 177);
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 90%;
+    margin: auto;
+    
+    
+}
+
+.main-nav {
+    margin-bottom: 2.5em;
+}
+
+.footer-nav-mobile a {
+    position: absolute;
+    top: 2em;
+    right: 0;
+    color: rgb(148, 5, 177);
+}
+
+.student-name {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    color: rgb(148, 5, 177);
+}
+
+	/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+    
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+    body {
+        width: 90%;
+        margin: auto;
+    }
+
+    .col {
+        float: left;
+        max-width: 48%;
+    }
+
+    .col-b {
+        padding-left: 4%;
+    }
+
+
+    .main-nav  {
+        padding-left: 20%;
+        padding-right: 20%;
+        top: 1em;
+        margin-top: 2em;
+        
+    }
+
+    .main-nav a{
+        width:25%;
+        padding: 0;
+    }
+
+    .intro {
+        margin: auto;
+        padding-top: 1em;
+    }
+
+    .avatar {
+        float: right;
+        max-width: 40%;
+        padding-left: 2%;
+        
+    }
+
+    .intro p {
+        text-align: left;
+        max-width: 58%;
+        float: left;
+        font-size: 1.25em;
+    }
+
+    .main-nav a {
+        float: left;
+        
+    }
+    .container {
+        
+        position: relative;
+        margin: auto;
+    }
+
+    .section-title {
+       padding: 3em 0 4em;
+       margin: auto;
+    }
+
+    .portfolio {
+        margin: auto;
+    }
+
+    .image {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .name {
+        padding-top: 1em;
+        font-size: 1.5em;
+    }
+
+    .footer-nav-mobile {
+        display: none;
+    }
+
+    .footer-nav-tablet {
+
+        display: inline-block;
+        float: right;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-right: 0;
+    }
+
+    .footer-nav-tablet a {
+        font-size: .75em;
+        float: left;
+        padding-left: 2em;
+    }
+
+    .main-footer {
+        min-width: 100%;
+    }
+
+    .skills {
+        padding-bottom: 0;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .name {
+        margin: 0;
+        font-size: 1.5em; 
+        float: left;
+    }
+
+    .main-nav {
+
+        display: inline-block;
+        float: right;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-right: 0;
+
+      
+    }
+
+    .intro {
+        padding-top: 0;
+    }
+
+    .main-nav a {
+        font-size: .75em;
+        padding-left: 1em;
+        float: left;
+        width: auto;
+    }
+    
+    .container {
+        position: relative;
+    }
+
+    .col {
+        width: 32%
+        
+    }
+
+    .col-b {
+        padding-left: 0;
+    }
+    
+    .second-col,
+    .third-col {
+        padding-left: 2%;
+    }
+
+    .section-title {
+        padding: 2em 0 1em;
+    }
+
+}
